@@ -29,7 +29,7 @@ int GetNbObjetGraphique(void){
 void ConstructeurObjetGraphique(PObjetGraphique othis){
 	
 	printf("ObjetGraphique::ConstructeurObjetGraphique\n");
-	this->myClass = &LeMetaObjetGraphique;
+	othis->myClass = &LeMetaObjetGraphique;
 	othis->x = 0;
 	othis->y = 0;
 }
@@ -37,5 +37,5 @@ void ConstructeurObjetGraphique(PObjetGraphique othis){
 
 int main(){
 	
-	ObjetGraphique objetGraphique = new ObjetGraphique();
+	ObjetGraphique objetGraphique = ObjetGraphique();
 }
